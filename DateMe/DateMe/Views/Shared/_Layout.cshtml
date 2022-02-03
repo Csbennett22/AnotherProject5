@@ -1,0 +1,22 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BaconsaleWebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div>
+        <!--list of links to other pages-->
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="Movies">New Movie Form</a>
+        <a asp-controller="Home" asp-action="MovieList">See Movie List</a>
+        <a href="https://baconsale.com/">My Podcasts</a>
+        <br />
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
